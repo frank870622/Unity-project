@@ -7,7 +7,8 @@ public class GameScript : MonoBehaviour {
 
     public GameObject InGame;
     public GameObject PauseMenu;
-
+    public Transform dice;
+    public Camera camera;
 
     bool gameIsPause = false;
 	// Use this for initialization
@@ -55,5 +56,11 @@ public class GameScript : MonoBehaviour {
         InGame.SetActive(true);
         PauseMenu.SetActive(false);
         Time.timeScale = 1f;
+    }
+
+    public void CreateDice()
+    {
+        Transform t = Instantiate(dice);
+        t.position = new Vector3(camera.transform.position.x, camera.transform.position.y - 5, camera.transform.position.z);
     }
 }
