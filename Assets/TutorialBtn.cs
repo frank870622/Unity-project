@@ -8,6 +8,7 @@ public class TutorialBtn : MonoBehaviour
 
     public GameObject Menu;
     public GameObject Tutorial;
+    public GameObject ParticleSystem;
     public AudioSource btnFX;
     public AudioClip hoverOnFX;
     public AudioClip clickFX;
@@ -23,7 +24,8 @@ public class TutorialBtn : MonoBehaviour
     {
         yield return new WaitUntil(() => !btnFX.isPlaying);
         Menu.SetActive(false);
-        Tutorial.SetActive(true);       
+        Tutorial.SetActive(true);
+        ParticleSystem.SetActive(false);      
     }
 
     //mouse hover on sound
