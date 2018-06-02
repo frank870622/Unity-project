@@ -58,6 +58,7 @@
      <Compile Include="Assets\GameScript.cs" />
      <Compile Include="Assets\InGameBacktoGameBtn.cs" />
      <Compile Include="Assets\InGameBacktoMenuBtn.cs" />
+     <Compile Include="Assets\MapUI.cs" />
      <Compile Include="Assets\StartBtn.cs" />
      <Compile Include="Assets\TutorialBtn.cs" />
      <Compile Include="Assets\TutorialtoMenuBtn.cs" />
