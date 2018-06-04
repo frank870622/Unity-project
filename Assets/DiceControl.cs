@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class DiceControl : MonoBehaviour {
+    public GameObject mapui;
     private Rigidbody rd;
     bool hasShowNum = false;
 	// Use this for initialization
@@ -51,5 +52,7 @@ public class DiceControl : MonoBehaviour {
     {
         yield return new WaitForSeconds(1.0f);
         Destroy(rd.transform.gameObject);
+        Debug.Log("hello");
+        mapui.SetActive(true);
     }
 }
