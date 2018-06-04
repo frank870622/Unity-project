@@ -8,6 +8,8 @@ public class MapUI : MonoBehaviour {
     public AudioSource btnFX;
     public AudioClip hoverOnFX;
     public AudioClip clickFX;
+    public GameObject Dicebutton;
+    public GameObject NextturnButton;
 
     public void BacktoGame()
     {
@@ -19,6 +21,8 @@ public class MapUI : MonoBehaviour {
     {
         yield return new WaitUntil(() => !btnFX.isPlaying);
         mapUI.SetActive(false);
+        Dicebutton.SetActive(false);
+        NextturnButton.SetActive(true);
         Time.timeScale = 1f;
     }
 
@@ -32,6 +36,6 @@ public class MapUI : MonoBehaviour {
     public void ClickSound()
     {
         btnFX.PlayOneShot(clickFX);
-    }
+    }   
 
 }
