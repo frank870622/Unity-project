@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class DiceBtn : MonoBehaviour {
 
     public Transform dice;
-    public Camera camera;
+    public Camera maincamera;
     public Transform button;
     public AudioSource btnFX;
     public AudioClip hoverOnFX;
@@ -24,7 +24,7 @@ public class DiceBtn : MonoBehaviour {
         if(button.GetComponent<Button>().interactable == true)
         {
             Transform t = Instantiate(dice);
-            t.position = new Vector3(camera.transform.position.x, camera.transform.position.y - 5, camera.transform.position.z);
+            t.position = new Vector3(maincamera.transform.position.x, maincamera.transform.position.y - 5, maincamera.transform.position.z);
             t.gameObject.SetActive(true);
         }
         button.GetComponent<Button>().interactable = false;
