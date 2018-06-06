@@ -291,6 +291,7 @@
     <Compile Include="Assets\InGameBacktoGameBtn.cs" />
     <Compile Include="Assets\InGameBacktoMenuBtn.cs" />
     <Compile Include="Assets\MainCamera.cs" />
+    <Compile Include="Assets\MapInformation.cs" />
     <Compile Include="Assets\MapUI.cs" />
     <Compile Include="Assets\NextTurnBtn.cs" />
     <Compile Include="Assets\Player.cs" />
