@@ -44,10 +44,17 @@ public class Player : MonoBehaviour
 
     public void move(int locate, int player)
     {
-        if(player == 1)
+        if (player == 1)
         {
             transform.position = new Vector3((float)player1_posx[locate], transform.position.y, (float)player1_posz[locate]);
             maincamera.transform.position = new Vector3((float)player1_posx[locate], maincamera.transform.position.y, (float)player1_posz[locate]);
+            /*
+            while (transform.position != new Vector3((float)player1_posx[locate], transform.position.y, (float)player1_posz[locate]))
+            {
+                transform.position = Vector3.MoveTowards(transform.position, new Vector3((float)player1_posx[locate], transform.position.y, (float)player1_posz[locate]), 1 * Time.deltaTime);
+                StartCoroutine("pause");
+            }
+            */
             //transform.position = Vector3.MoveTowards(transform.position,new Vector3((float)player1_posx[locate], transform.position.y, (float)player1_posz[locate]),1);
             //camera.transform.position = Vector3.MoveTowards(camera.transform.position, new Vector3((float)player1_posx[locate], camera.transform.position.y, (float)player1_posz[locate]), 1);
         }
@@ -55,39 +62,45 @@ public class Player : MonoBehaviour
         {
             transform.position = new Vector3((float)player2_posx[locate], transform.position.y, (float)player2_posz[locate]);
             maincamera.transform.position = new Vector3((float)player2_posx[locate], maincamera.transform.position.y, (float)player2_posz[locate]);
+            /*
+            while (transform.position != new Vector3((float)player2_posx[locate], transform.position.y, (float)player2_posz[locate]))
+            {
+                transform.position = Vector3.MoveTowards(transform.position, new Vector3((float)player2_posx[locate], transform.position.y, (float)player2_posz[locate]), 1*Time.deltaTime);
+                StartCoroutine("pause");
+            }
+            */
             //transform.position = Vector3.MoveTowards(transform.position, new Vector3((float)player2_posx[locate], transform.position.y, (float)player2_posz[locate]), 1);
             //camera.transform.position = Vector3.MoveTowards(camera.transform.position, new Vector3((float)player1_posx[locate], camera.transform.position.y, (float)player1_posz[locate]), 1);
         }
-        
     }
 }
 
-    /*
-     check point
-     1.億載金城
-     2.林默娘公園
-     3.東興洋行
-     4.安平樹屋
-     5.安平古堡
-     6.安平開台天后宮
-     7.安平遊憩碼頭
-     8.花園夜市
-     9.321巷藝術聚落
-     10.台南公園
-     11.成大榕園
-     12.台南文創園區
-     13.台南車站
-     14.原台南縣知事官邸
-     15.巴克禮公園
-     16.延平郡王祠
-     17.藍晒圖文創園區
-     18.孔廟
-     19.台灣文學館
-     20.林百貨
-     21.海南路藝術街
-     22.神農街
-     23.大天后宮
-     24.祀典武廟
-     25.赤崁樓
+/*
+ check point
+ 1.億載金城
+ 2.林默娘公園
+ 3.東興洋行
+ 4.安平樹屋
+ 5.安平古堡
+ 6.安平開台天后宮
+ 7.安平遊憩碼頭
+ 8.花園夜市
+ 9.321巷藝術聚落
+ 10.台南公園
+ 11.成大榕園
+ 12.台南文創園區
+ 13.台南車站
+ 14.原台南縣知事官邸
+ 15.巴克禮公園
+ 16.延平郡王祠
+ 17.藍晒圖文創園區
+ 18.孔廟
+ 19.台灣文學館
+ 20.林百貨
+ 21.海南路藝術街
+ 22.神農街
+ 23.大天后宮
+ 24.祀典武廟
+ 25.赤崁樓
 
-     */
+ */
