@@ -5,6 +5,8 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public Camera maincamera;
+    int money;
+    int score;
     double[] player1_posx = new double[]
     {
         0,
@@ -42,6 +44,11 @@ public class Player : MonoBehaviour
         -14.03, -1.98, -4.12, -2.91, 0.65
     };
 
+    public void Awake()
+    {
+        score = 0;
+        money = 100;
+    }
     public void move(int locate, int player)
     {
         if (player == 1)
@@ -72,6 +79,27 @@ public class Player : MonoBehaviour
             //transform.position = Vector3.MoveTowards(transform.position, new Vector3((float)player2_posx[locate], transform.position.y, (float)player2_posz[locate]), 1);
             //camera.transform.position = Vector3.MoveTowards(camera.transform.position, new Vector3((float)player1_posx[locate], camera.transform.position.y, (float)player1_posz[locate]), 1);
         }
+    }
+
+    public void buySomething(int cost)
+    {
+        money -= cost;
+    }
+    public void addmoney()
+    {
+        money += 15;
+    }
+    public void addScore(int addscore)
+    {
+        score += addscore;
+    }
+    public int getMoney()
+    {
+        return money;
+    }
+    public int getscore()
+    {
+        return score;
     }
 }
 
