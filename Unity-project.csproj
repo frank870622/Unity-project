@@ -282,6 +282,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\BuyButton.cs" />
     <Compile Include="Assets\DiceBtn.cs" />
     <Compile Include="Assets\DiceControl.cs" />
     <Compile Include="Assets\Diceplate.cs" />
@@ -295,6 +296,7 @@
     <Compile Include="Assets\MapUI.cs" />
     <Compile Include="Assets\NextTurnBtn.cs" />
     <Compile Include="Assets\Player.cs" />
+    <Compile Include="Assets\ScoreLabel.cs" />
     <Compile Include="Assets\StartBtn.cs" />
     <Compile Include="Assets\TutorialBtn.cs" />
     <Compile Include="Assets\TutorialtoMenuBtn.cs" />
