@@ -10,38 +10,38 @@ public class Player : MonoBehaviour
     double[] player1_posx = new double[]
     {
         0,
-        -21.2, -24.62, -24.62, -24.62, -20.14,
-        -20.18, -17.83, 2.07, 13.24, 19.66,
+        -21.2, -24.62, -17.83, -24.62, -20.18,
+        -24.62, -20.14, 2.07, 13.24, 19.66,
         15.9, 5.6, 4.66, 4.14, 17.6,
-        -9, -28.79, -17.69, -18.31, -23.46,
-        -34, -35.25, -27.15, -24.65, -24.23
+        -9, -17.69, -28.79, -34, -23.46,
+        -18.31, -27.15, -35.25, -24.65, -24.23
     };
     double[] player1_posz = new double[]
     {
         0,
-        9, 13.62, 24.55, 29.37, 28.58,
-        25.57, 21.64, 23.6, 16.66, 12.8,
+        9, 13.62, 21.64, 24.55, 25.57,
+        29.37, 28.58, 23.6, 16.66, 12.8,
         0, 0.2, -5.65, -9.82, -22.6,
-        -22, -23.73, -17.52, -12.72, -14.47,
-        -14.12, -1.99, -4.15, -2.88, 0.67
+        -22, -17.52, -23.73, -14.12, -14.47,
+        -12.72, -4.15, -1.99, -2.88, 0.67
     };
     double[] player2_posx = new double[]
     {
         0,
-        -13.8, -16.77, -17.43, -16.94, -9.55,
-        -11.84, -9.44, 12.49, 21.8, 28.77,
+        -13.8, -16.77, -9.44, -17.43, -11.84,
+        -16.94, -9.55, 12.49, 21.8, 28.77,
         24.9, 15.6, 14.8, 13.63, 27.1,
-        -0.9, -19.94, -8.97, -7.81, -14.27,
-        -25.09, -27.24, -19.32, -15.19, -14.68
+        -0.9, -8.97, -19.94, -25.09, -14.27,
+        -7.81, -19.32, -27.24, -15.19, -14.68
     };
     double[] player2_posz = new double[]
     {
         0,
-        9.1, 13.87, 24.68, 29.43, 28.63,
-        25.6, 21.61, 23.72, 16.48, 12.77,
+        9.1, 13.87, 21.61, 24.68, 25.6,
+        29.43, 28.63, 23.72, 16.48, 12.77,
         0, 0.3, -5.28, -9.81, -22.3,
-        -22, -23.58, -17.68, -12.69, -14.43,
-        -14.03, -1.98, -4.12, -2.91, 0.65
+        -22, -17.68, -23.58, -14.03, -14.43,
+        -12.69, -4.12, -1.98, -2.91, 0.65
     };
 
     public void Awake()
@@ -55,29 +55,12 @@ public class Player : MonoBehaviour
         {
             transform.position = new Vector3((float)player1_posx[locate], transform.position.y, (float)player1_posz[locate]);
             maincamera.transform.position = new Vector3((float)player1_posx[locate], maincamera.transform.position.y, (float)player1_posz[locate]);
-            /*
-            while (transform.position != new Vector3((float)player1_posx[locate], transform.position.y, (float)player1_posz[locate]))
-            {
-                transform.position = Vector3.MoveTowards(transform.position, new Vector3((float)player1_posx[locate], transform.position.y, (float)player1_posz[locate]), 1 * Time.deltaTime);
-                StartCoroutine("pause");
-            }
-            */
-            //transform.position = Vector3.MoveTowards(transform.position,new Vector3((float)player1_posx[locate], transform.position.y, (float)player1_posz[locate]),1);
-            //camera.transform.position = Vector3.MoveTowards(camera.transform.position, new Vector3((float)player1_posx[locate], camera.transform.position.y, (float)player1_posz[locate]), 1);
+
         }
         else
         {
             transform.position = new Vector3((float)player2_posx[locate], transform.position.y, (float)player2_posz[locate]);
             maincamera.transform.position = new Vector3((float)player2_posx[locate], maincamera.transform.position.y, (float)player2_posz[locate]);
-            /*
-            while (transform.position != new Vector3((float)player2_posx[locate], transform.position.y, (float)player2_posz[locate]))
-            {
-                transform.position = Vector3.MoveTowards(transform.position, new Vector3((float)player2_posx[locate], transform.position.y, (float)player2_posz[locate]), 1*Time.deltaTime);
-                StartCoroutine("pause");
-            }
-            */
-            //transform.position = Vector3.MoveTowards(transform.position, new Vector3((float)player2_posx[locate], transform.position.y, (float)player2_posz[locate]), 1);
-            //camera.transform.position = Vector3.MoveTowards(camera.transform.position, new Vector3((float)player1_posx[locate], camera.transform.position.y, (float)player1_posz[locate]), 1);
         }
     }
 
