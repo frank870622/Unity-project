@@ -2,32 +2,72 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MainCamera : MonoBehaviour {
+public class MainCamera : MonoBehaviour
+{
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-        /*
-		if(transform.position.x > 24.77)
+    public float cameraMoveAmount;
+    public float cameraZoomAmount;
+
+
+    private float moveBorder = 10;
+    private float screenWidthQuarter = Screen.width / 4;
+    private float screenHeightQuarter = Screen.height / 4;
+    // Use this for initialization
+    void Start()
+    {
+        //myCamera = GetComponent<Camera>();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        cameraMove();
+        cameraZoom();
+    }
+
+    private void cameraMove()
+    {
+        if (Input.mousePosition.y < moveBorder)
         {
-            transform.position = new Vector3((float)24.77, transform.position.y, transform.position.z);
+            transform.position -= transform.up * Time.deltaTime * cameraMoveAmount;
+            if (Input.mousePosition.x < screenWidthQuarter)
+                transform.position -= transform.right * Time.deltaTime * cameraMoveAmount;
+            else if (Input.mousePosition.x > Screen.width - screenWidthQuarter)
+                transform.position += transform.right * Time.deltaTime * cameraMoveAmount;
         }
-        if(transform.position.z > 19.46)
+        else if (Input.mousePosition.y > Screen.height - moveBorder)
         {
-            transform.position = new Vector3(transform.position.x, transform.position.y, (float)19.46);
+            transform.position += transform.up * Time.deltaTime * cameraMoveAmount;
+            if (Input.mousePosition.x < screenWidthQuarter)
+                transform.position -= transform.right * Time.deltaTime * cameraMoveAmount;
+            else if (Input.mousePosition.x > Screen.width - screenWidthQuarter)
+                transform.position += transform.right * Time.deltaTime * cameraMoveAmount;
         }
-        if(transform.position.x < -24.77)
+        else if (Input.mousePosition.x < moveBorder)
         {
-            transform.position = new Vector3((float)-24.77, transform.position.y, transform.position.z);
+            transform.position -= transform.right * Time.deltaTime * cameraMoveAmount;
+            if (Input.mousePosition.y < screenHeightQuarter)
+                transform.position -= transform.up * Time.deltaTime * cameraMoveAmount;
+            else if (Input.mousePosition.y > Screen.height - screenHeightQuarter)
+                transform.position += transform.up * Time.deltaTime * cameraMoveAmount;
         }
-        if(transform.position.z < -19.46)
+        else if (Input.mousePosition.x > Screen.width - moveBorder)
         {
-            transform.position = new Vector3(transform.position.x, transform.position.y, (float)-19.46);
+            transform.position += transform.right * Time.deltaTime * cameraMoveAmount;
+            if (Input.mousePosition.y < screenHeightQuarter)
+                transform.position -= transform.up * Time.deltaTime * cameraMoveAmount;
+            else if (Input.mousePosition.y > Screen.height - screenHeightQuarter)
+                transform.position += transform.up * Time.deltaTime * cameraMoveAmount;
         }
-        */
-	}
+    }
+
+    private void cameraZoom()
+    {
+        if (Input.GetAxis("Mouse ScrollWheel") > 0f && transform.position.y >= 15)
+            transform.position += transform.forward * Time.deltaTime * cameraZoomAmount;
+
+        if (Input.GetAxis("Mouse ScrollWheel") < 0f && transform.position.y <= 40)
+            transform.position -= transform.forward * Time.deltaTime * cameraZoomAmount;*
+
+    }
 }

@@ -11,6 +11,6 @@ public class Diceplate : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		transform.position = new Vector3(maincamera.transform.position.x, maincamera.transform.position.y - 20, maincamera.transform.position.z);
+		transform.position = new Vector3(maincamera.transform.position.x, 0, maincamera.transform.position.z);
     }
 }
