@@ -120,7 +120,7 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.Spa
 3a18627f9836ac4d0fb5feaa328251c6 Assembly-CSharp.dll:.DiceControl
 d114da0b04917095ad91578532570c08 Assembly-CSharp.dll:.GameScript
 62ab4355dc75b13b94993556f5d8e17a Assembly-CSharp.dll:.ExitBtn
-b0859b01e313d6085a5b0b26d5093ab8 Assembly-CSharp.dll:.Player
+08759c5a324a96d1e1c937b24a7f3eff Assembly-CSharp.dll:.Player
 62ab4355dc75b13b94993556f5d8e17a Assembly-CSharp.dll:.StartBtn
 92a79663fe69c6aa5bba49e8f820f770 Assembly-CSharp.dll:.TutorialBtn
 16bb855f74c6554a46fd0c0ba937d0af Assembly-CSharp.dll:.InGameBacktoMenuBtn
