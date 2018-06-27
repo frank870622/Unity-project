@@ -19,6 +19,7 @@ public class GameSystem : MonoBehaviour
     public MapInformation mapinformation;
     public ScoreLabel scoreLabel1;
     public ScoreLabel scoreLabel2;
+
     
 
     int whichPlayer = 1;
