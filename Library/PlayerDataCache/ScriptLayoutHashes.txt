@@ -108,6 +108,7 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 73843688b51256aed059f049c540bca8 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformChild
 528ea1fd7c01796fc60c4e2f172ea229 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformVisualizer
 9de3a22eca9aefadba2d10d5987cefe3 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.FadeInScript
 322cb40e1e282f28af980cbef7922a90 UnityEngine.Analytics.dll:UnityEngine.Analytics.AnalyticsEventTracker
 dc07d7ad69b399a46e92c483bf1c04ca UnityEngine.Analytics.dll:UnityEngine.Analytics.AnalyticsTracker
 0820f21c7f4511532d2a53789f453822 Assembly-CSharp.dll:.MapInformation
@@ -125,6 +126,7 @@ b0859b01e313d6085a5b0b26d5093ab8 Assembly-CSharp.dll:.Player
 16bb855f74c6554a46fd0c0ba937d0af Assembly-CSharp.dll:.InGameBacktoMenuBtn
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Advertisements.dll:UnityEngine.Advertisements.CallbackExecutor
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Advertisements.dll:UnityEngine.Advertisements.Editor.Placeholder
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.ScoreLabel
 b0859b01e313d6085a5b0b26d5093ab8 Assembly-CSharp.dll:.Diceplate
 fc1e0f4d8439d9928083474691511a13 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Networking.dll:UnityEngine.Networking.NetworkBehaviour
@@ -155,6 +157,5 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.Spa
 9de3a22eca9aefadba2d10d5987cefe3 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 4ae4339e6eab12ad4d6531c04a772b5c Assembly-CSharp.dll:.MapUI
 6ba969be7207763dcd210a68618f40af Assembly-CSharp.dll:.DiceBtn
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.MainCamera
+5cb6c1645a16314a15174668b07a2e07 Assembly-CSharp.dll:.MainCamera
 3a18627f9836ac4d0fb5feaa328251c6 Assembly-CSharp.dll:.BuyButton
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.ScoreLabel
