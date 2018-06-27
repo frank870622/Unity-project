@@ -24,7 +24,7 @@ public class DiceBtn : MonoBehaviour {
         if(button.GetComponent<Button>().interactable == true)
         {
             Transform t = Instantiate(dice);
-            t.position = new Vector3(maincamera.transform.position.x, maincamera.transform.position.y - 5, maincamera.transform.position.z);
+            t.position = new Vector3(maincamera.transform.position.x, 10, maincamera.transform.position.z);
             t.gameObject.SetActive(true);
         }
         button.GetComponent<Button>().interactable = false;

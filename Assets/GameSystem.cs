@@ -27,7 +27,7 @@ public class GameSystem : MonoBehaviour
     int days = 1;
     int[] mapcost = new int[]
     {
-        0,
+        -50,
         50,0,0,120,100,
         50,50,150,0,0,
         70,0,0,60,0,
