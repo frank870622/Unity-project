@@ -260,7 +260,7 @@ MonoBehaviour:
   buyButtonText: {fileID: 640808375}
   buyButton: {fileID: 1759163278}
   Image01:
-  - {fileID: 21300000, guid: f2bf617159f41664f86f7c1c5e3ffa62, type: 3}
+  - {fileID: 21300000, guid: 5b35e4ec5f39cac4a8188112da7ae2ae, type: 3}
   - {fileID: 21300000, guid: f2bf617159f41664f86f7c1c5e3ffa62, type: 3}
   - {fileID: 21300000, guid: b89b4784a5e24d14fa46d749c9885b52, type: 3}
   - {fileID: 21300000, guid: 404260593bc1ec4429aea23c61b4120c, type: 3}
@@ -3523,7 +3523,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1270862391
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3768,7 +3768,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1299143657}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -14.68, y: -0, z: 0.65}
+  m_LocalPosition: {x: 3.27, y: -0, z: 4.56}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_Children: []
   m_Father: {fileID: 0}
@@ -5058,7 +5058,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1821240904}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -24.23, y: -0, z: 0.67}
+  m_LocalPosition: {x: -3.54, y: -0, z: 4.52}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_Children: []
   m_Father: {fileID: 0}
