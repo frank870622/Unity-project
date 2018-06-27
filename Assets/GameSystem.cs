@@ -55,7 +55,7 @@ public class GameSystem : MonoBehaviour
             player1.addScore(diceNumber);
             refleshMoney();
             player1Locate = player1Locate + diceNumber;
-            if (player1Locate > 25) player1Locate -= 25;
+            if (player1Locate > 25) player1Locate -= 26;
             player1.move(player1Locate, whichPlayer);
             mapinformation.changeInformation(player1Locate, judgeHaveEnoughMoney(whichPlayer));
         }
@@ -64,7 +64,7 @@ public class GameSystem : MonoBehaviour
             player2.addScore(diceNumber);
             refleshMoney();
             player2Locate = player2Locate + diceNumber;
-            if (player2Locate > 25) player2Locate -= 25;
+            if (player2Locate > 25) player2Locate -= 26;
             player2.move(player2Locate, whichPlayer);
             mapinformation.changeInformation(player2Locate, judgeHaveEnoughMoney(whichPlayer));
         }

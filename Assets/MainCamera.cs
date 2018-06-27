@@ -67,7 +67,7 @@ public class MainCamera : MonoBehaviour
             transform.position += transform.forward * Time.deltaTime * cameraZoomAmount;
 
         if (Input.GetAxis("Mouse ScrollWheel") < 0f && transform.position.y <= 40)
-            transform.position -= transform.forward * Time.deltaTime * cameraZoomAmount;*
+            transform.position -= transform.forward * Time.deltaTime * cameraZoomAmount;
 
     }
 }
