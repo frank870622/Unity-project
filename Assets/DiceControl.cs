@@ -52,8 +52,8 @@ public class DiceControl : MonoBehaviour {
                 diceNumber = 6;
             }
             StartCoroutine("pause");
-        }   
-	}
+        }
+    }
 
     IEnumerator pause()
     {

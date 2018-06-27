@@ -57,7 +57,7 @@ public class GameSystem : MonoBehaviour
             player1Locate = player1Locate + diceNumber;
             if (player1Locate > 25) player1Locate -= 26;
             player1.move(player1Locate, whichPlayer);
-            mapinformation.changeInformation(player1Locate, judgeHaveEnoughMoney(whichPlayer));
+            StartCoroutine(showMapInformation(player1, player1Locate));
         }
         else
         {
@@ -66,8 +66,14 @@ public class GameSystem : MonoBehaviour
             player2Locate = player2Locate + diceNumber;
             if (player2Locate > 25) player2Locate -= 26;
             player2.move(player2Locate, whichPlayer);
-            mapinformation.changeInformation(player2Locate, judgeHaveEnoughMoney(whichPlayer));
+            StartCoroutine(showMapInformation(player2, player2Locate));
         }
+    }
+
+    IEnumerator showMapInformation(Player player, int locate)
+    {
+        yield return new WaitUntil(() => player.moving == false);
+        mapinformation.changeInformation(locate, judgeHaveEnoughMoney(whichPlayer));
     }
     public void changePlayer()
     {
